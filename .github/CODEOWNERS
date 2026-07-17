@@ -1,0 +1,29 @@
+# -----------------------------------------------------------------
+# CODEOWNERS for MCPE Clone Project
+# Rules are evaluated top-to-bottom. The last matching rule wins.
+# -----------------------------------------------------------------
+
+# Global owners (Fallback for any unmapped file)
+*                                         @project-leads
+
+ Core Game Engine (C++ / Headers)
+*.cpp                                     @engine-developers
+*.h                                       @engine-developers
+*.hpp                                     @engine-developers
+
+# Game Assets & Configurations (JSON / Textures / Models)
+*.json                                    @content-designers
+*.png                                     @art-team
+*.tga                                     @art-team
+
+# Scripting & Modding API (e.g., Behavior / Resource Packs)
+/behavior_packs/                          @gameplay-scripters
+/resource_packs/                          @art-team
+
+# Build System & CI/CD Pipelines
+/CMakeLists.txt                           @devops-team
+/.github/workflows/                       @devops-team
+
+# Documentation
+*.md                                      @documentation-leads
+/docs/                                    @documentation-leads
