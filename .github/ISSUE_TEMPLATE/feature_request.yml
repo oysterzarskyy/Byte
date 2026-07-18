@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Share the idea behind the feature request.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Feature proposal
+      description: What should be added or improved?
+      placeholder: Add a block editor that...
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why this matters
+      placeholder: This would help because...
+    validations:
+      required: true
